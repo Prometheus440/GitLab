@@ -1,1 +1,3 @@
-This is my second update
+git add (file name)
+git commit -m "(message)"
+git push
