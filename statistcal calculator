@@ -1,0 +1,52 @@
+//prompt the user to enter 6 numbers
+//Then calculate the mean and standard deviation of these
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+float square(float fNumber)
+{
+	return fNumber * fNumber;
+}
+
+int main()
+{
+	float fFirstValue;
+	float fSecondValue;
+	float fThirdValue;
+	float fFourthValue;
+	float fFifthValue;
+	float fSixthValue;
+
+	float fStandardDeviationValue;
+
+	cout << "Enter first number: " << endl;
+	cin >> fFirstValue;
+
+	cout << "Enter second number: " << endl;
+	cin >> fSecondValue;
+
+	cout << "Enter third number: " << endl;
+	cin >> fThirdValue;
+
+	cout << "Enter fourth number: " << endl;
+	cin >> fFourthValue;
+
+	cout << "Enter fifth number: " << endl;
+	cin >> fFifthValue;
+
+	cout << "Enter sixth number: " << endl;
+	cin >> fSixthValue;
+
+	float fMeanValue = (fFirstValue + fSecondValue + fThirdValue + fFourthValue + fFifthValue + fSixthValue) / 6;
+	cout << endl << endl << "The mean value is " << fMeanValue << endl;
+
+	fStandardDeviationValue = sqrt((square(fFirstValue - fMeanValue) + square(fSecondValue - fMeanValue) + square(fThirdValue - fMeanValue) + square(fFourthValue - fMeanValue) + square(fFifthValue - fMeanValue) + square(fSixthValue - fMeanValue)) / 5);
+	cout << "The standard deviation value is " << fStandardDeviationValue << endl << endl;
+	
+
+	system("PAUSE");
+	return 0;
+}
