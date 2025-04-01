@@ -1,0 +1,18 @@
+//this is to allow for input and output
+#include <iostream>
+
+//namespace allows for things like endl
+using namespace std;
+
+//main() is an int, so it expects an int
+int main()
+{
+    //character out, arrows point left, "string" with new line, then return
+    cout << "Hello World!\n" << endl;
+    
+    //Pauses programe until user presses a key
+    system("PAUSE");
+
+    //return 0 to match main() type and to make sure everything runs okay
+    return 0;
+}
