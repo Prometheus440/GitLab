@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	string sName;
+	int iAge;
+
+	cout << "Hello, what's your name?" << endl;
+	cin >> sName;
+
+	cout << endl << "Nice to meet you, " << sName << ". how old are you?" << endl;
+	cin >> iAge;
+
+	int iYear = 2025 - iAge;
+
+	cout << endl << "You were born in " << iYear - 1 << " or " << iYear;
+
+	cout << endl << endl << "Goodbye" << endl << endl;
+
+	system("PAUSE");
+	return 0;
+}
