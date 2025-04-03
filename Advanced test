@@ -1,0 +1,64 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int iScore = 0;
+
+	char cIn;
+
+	cout << "Test" << endl << endl;
+
+	cout << "Which is the best DLC out of these?:" << endl;
+	cout << "a. Dark Souls III: Ashes of Ariandel" << endl << "b. Skyrim: Hearthfire" << endl << "c. Elden Ring: Shadow of the Erdtree" << endl;
+	cin >> cIn;
+
+	if (cIn == 'a' || cIn == 'A') iScore = iScore + 15;
+	else if (cIn == 'b' || cIn == 'B') iScore = iScore + 0;
+	else if (cIn == 'c' || cIn == 'C') iScore = iScore + 25;
+
+
+
+	cout << endl << "Which is the best colour out of these?:" << endl;
+	cout << "a. yellow" << endl << "b. blue" << endl << "c. red" << endl;
+	cin >> cIn;
+
+	if (cIn == 'a' || cIn == 'A') iScore = iScore + 0;
+	else if (cIn == 'b' || cIn == 'B') iScore = iScore + 25;
+	else if (cIn == 'c' || cIn == 'C') iScore = iScore + 15;
+
+
+
+	cout << endl << "Which is the scariest Resident Evil game?:" << endl;
+	cout << "a. Resident Evil Biohazard" << endl << "b. Resident Evil 2 (2019)" << endl << "c. Resident Evil Village" << endl;
+	cin >> cIn;
+
+	if (cIn == 'a' || cIn == 'A') iScore = iScore + 25;
+	else if (cIn == 'b' || cIn == 'B') iScore = iScore + 15;
+	else if (cIn == 'c' || cIn == 'C') iScore = iScore + 0;
+
+
+
+	cout << endl << "Which is best to play as in Mario Kart?:" << endl;
+	cout << "a. Luigi" << endl << "b. Wario" << endl << "c. Toad" << endl;
+	cin >> cIn;
+
+	if (cIn == 'a' || cIn == 'A') iScore = iScore + 25;
+	else if (cIn == 'b' || cIn == 'B') iScore = iScore + 15;
+	else if (cIn == 'c' || cIn == 'C') iScore = iScore + 0;
+
+	
+
+	cout << endl << "Your total score is " << iScore << "%" << endl;;
+
+	if (iScore == 0) cout << "You are completely incorrect, don't speak to me." << endl << endl;
+	else if (iScore <= 40) cout << "You are never right, and only sometimes half right." << endl << endl;
+	else if (40 < iScore && iScore <= 70) cout << "Average. Try again." << endl << endl;
+	else if (70 < iScore && iScore < 100) cout << "We are very similar." << endl << endl;
+	else if (iScore == 100) cout << "You either know all the answers or are me. Perfect score." << endl << endl;
+
+	system("PAUSE");
+
+	return 0;
+}
